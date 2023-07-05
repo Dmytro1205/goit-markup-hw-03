@@ -74,6 +74,8 @@
 .light-studio {
   color: var(--bg-team);
   text-decoration: none;
+}
+.foot{
   display: inline-block;
   margin-bottom: 16px;
 }
