@@ -19,7 +19,7 @@
 .header-container {
   display: flex;
   max-height: 72px;
-  max-width: 1440px;
+  width: 1158px;
   align-items: center;
 }
 .logo {
@@ -36,7 +36,6 @@
 .nav-list {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 .address {
   font-family: 'Roboto';
@@ -50,11 +49,12 @@
   display: flex;
   gap: 40px;
   padding: 24px;
-  margin-left: 265px;
+  margin-left: 225px;
 }
 .nav-link {
   text-decoration: none;
   color: var(--bg-black);
+  padding: 24px 0;
 }
 .ad-link {
   text-decoration: none;
@@ -68,22 +68,20 @@
 .ad-link:focus {
   color: var(--cl-link);
 }
-.logo-link {
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 16px;
-}
 .dark-studio {
   color: var(--bg-black);
 }
 .light-studio {
   color: var(--bg-team);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .section-general {
   background-color: var(--bg-black);
-  padding: 188px 292px;
   margin: 0 auto;
+  padding: 188px 0
 }
 .general {
   font-family: 'Roboto';
@@ -124,6 +122,15 @@
   color: var(--bg-white);
   border: 1px solid transparent;
 }
+.section-features{
+  padding: 120px 0;
+}
+.features{
+  width: calc((100% - 72px) / 4);
+}
+.gadjet{
+  padding-bottom: 120px;
+}
 .btn-port {
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
@@ -144,8 +151,8 @@
   row-gap: 48px;
 }
 .work-list {
-  padding: 120px 0;
   display: flex;
+  padding: 120px 0;
   gap: 24px;
 }
 .section-portfolio {
@@ -221,7 +228,6 @@
   color: var(--bg-black);
   margin-bottom: 8px;
 }
-
 .parag {
   font-size: 16px;
   line-height: 1.5;
@@ -238,10 +244,11 @@
   margin-bottom: 72px;
 }
 .gadjet-list {
-  width: calc((100% - 48px) / 3);
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
+}
+.gadjet-img{
+  width: calc((100% - 48px) / 3);
 }
 .section-team {
   background-color: var(--bg-team);
@@ -259,8 +266,6 @@
 .team-list {
   display: flex;
   gap: 24px;
-  width: calc((100% - 72px) / 4);
-  border-radius: 0px 0px 4px 4px;
 }
 .name {
   padding: 32px 16px;
@@ -272,6 +277,9 @@
 }
 .team-img {
   background-color: var(--bg-white);
+  display: block;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 h1,
 h2,
@@ -298,13 +306,18 @@ p {
   padding: 0 15px;
   margin: 0 auto;
 }
-.img {
-  display: block;
-}
+
 .portfolio-img {
   padding: 32px 16px;
   border: 1px solid var(--border--cl);
   border-top: none;
+  
+}
+img{
+  display: block;
+}
+.app{
   width: calc((100% - 48px) / 3);
+  display: list-item;
 }
 
