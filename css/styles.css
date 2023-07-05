@@ -180,7 +180,6 @@
   letter-spacing: 0.02em;
   color: var(--bg-team);
   max-width: 264px;
-  margin-top: 16px;
   margin-left: 20px;
 }
 .nav {
@@ -247,9 +246,7 @@
 .gadjet-list {
   display: flex;
   gap: 24px;
-}
-.gadjet-img{
-  width: calc((100% - 48px) / 3);
+  width: calc((100% - 48px) / 3); 
 }
 .section-team {
   background-color: var(--bg-team);
@@ -267,6 +264,7 @@
 .team-list {
   display: flex;
   gap: 24px;
+  width: calc((100% - 72px) / 4);
 }
 .name {
   padding: 32px 16px;
@@ -279,7 +277,6 @@
 .team-img {
   background-color: var(--bg-white);
   display: block;
-  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
 h1,
